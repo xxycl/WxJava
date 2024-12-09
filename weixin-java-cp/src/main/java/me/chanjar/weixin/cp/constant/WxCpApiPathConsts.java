@@ -569,7 +569,30 @@ public interface WxCpApiPathConsts {
      * The constant EXMAIL_APP_COMPOSE_SEND.
      */
     String EXMAIL_APP_COMPOSE_SEND = "/cgi-bin/exmail/app/compose_send";
+    /**
+     * 获取表格记录
+     */
+    String SMART_SHEET_GET_SHEET = "/cgi-bin/wedoc/smartsheet/get_sheet";
 
+    /**
+     * 创建智能表格
+     */
+    String SMART_SHEET_ADD_SHEET = "/cgi-bin/wedoc/smartsheet/add_sheet";
+
+    /**
+     * 创建智能表格
+     */
+    String SMART_SHEET_GET_FIELD = "/cgi-bin/wedoc/smartsheet/get_fields";
+
+
+    /**
+     * 获取记录
+     */
+    String SMART_SHEET_GET_RECORDS = "/cgi-bin/wedoc/smartsheet/get_records";
+    /**
+     * 创建记录
+     */
+    String SMART_SHEET_ADD_RECORDS = "/cgi-bin/wedoc/smartsheet/add_records";
   }
 
   /**

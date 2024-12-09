@@ -454,6 +454,12 @@ public interface WxCpService extends WxService {
    * @return oa we drive service
    */
   WxCpOaWeDriveService getOaWeDriveService();
+  WxCpOaWeDocService getWeDocService();
+  /**
+   * 智能表格服务对象类
+   * @return
+   */
+  WxCpOaWeSmartSheetService getOaWeSmartSheetService();
 
   /**
    * 获取会话存档相关接口的服务类对象

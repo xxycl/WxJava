@@ -74,7 +74,8 @@ public abstract class BaseWxCpServiceImpl<H, P> implements WxCpService, RequestH
 
   private final WxCpMeetingService meetingService = new WxCpMeetingServiceImpl(this);
   private final WxCpCorpGroupService corpGroupService = new WxCpCorpGroupServiceImpl(this);
-
+  private final WxCpOaWeSmartSheetService oaWeSmartSheetService = new WxCpOaWeSmartSheetServiceImpl(this);
+  private final WxCpOaWeDocService oaWeDocService=new WxCpOaWeDocServiceImpl(this);
   /**
    * 全局的是否正在刷新access token的锁.
    */
@@ -581,6 +582,15 @@ public abstract class BaseWxCpServiceImpl<H, P> implements WxCpService, RequestH
   @Override
   public WxCpOaWeDriveService getOaWeDriveService() {
     return oaWeDriveService;
+  }
+
+  @Override
+  public WxCpOaWeDocService getWeDocService() {
+    return oaWeDocService;
+  }
+  @Override
+  public WxCpOaWeSmartSheetService getOaWeSmartSheetService() {
+    return oaWeSmartSheetService;
   }
 
   @Override
